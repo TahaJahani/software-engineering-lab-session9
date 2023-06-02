@@ -1,0 +1,98 @@
+body {
+    background-color: #00d9ff;
+    padding: 60px;
+}
+
+.calc-body{
+    width: 390px;
+    height: 694px;
+    background-color: #151515;
+    color: white;
+    border-radius: 40px;
+}
+
+.seperator-line{
+    width: 352px;
+    height: 0.1px;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 1px solid #4E4D4D;
+}
+
+.grid-container {
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.btn{
+    width: 66px;
+    height: 66px;
+    margin-top: 25px;
+    background: #343434;
+    border-radius: 9px;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #555555;
+}
+
+.action-btn{
+    color: #66FF7F;
+}
+
+.action-btn:hover{
+    color: #66FF7F;
+}
+
+.back-btn{
+    color: #FF5959;
+}
+
+.back-btn:hover{
+    color: #FF5959;
+}
+
+.clear-btn{
+    background-color: #FF5959;
+}
+
+.clear-btn:hover{
+    background-color: #fb6b6b;
+}
+
+.eq-btn{
+    background-color: #59ff74;
+    color: #343434;
+}
+
+.eq-btn:hover{
+    background-color: #7dff93;
+    color: #343434;
+}
+
+@font-face {
+    font-family: 'Digital Numbers Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Digital Numbers Regular'), url('../src/static/digital-numbers-cufonfonts-webfont/DigitalNumbers-Regular.woff') format('woff');
+}
+
+.calc-result{
+    height: 80px;
+    background-color: #1aa260;
+    text-align: left;
+    border-radius: 10px;
+    color: #081217;
+    width: 90%;
+    vertical-align: middle;
+    margin: 50px auto 50px auto;
+    resize: none;
+    font-family: 'Digital Numbers Regular';
+    font-size: 20px;
+}

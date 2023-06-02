@@ -1,0 +1,27 @@
+version: "3.3"
+
+services:
+  postgres:
+    image: postgres:15.1
+    ports:
+    - "7887:5432"
+    environment:
+      POSTGRES_PASSWORD: samplepass
+    volumes:
+    - $HOME/docker/volumes/Az9/postgres:/var/lib/postgresql/data
+  
+  frontend:
+    image: frontend
+    ports:
+    - "3000:80"
+  
+  backend:
+    image: backend
+    ports:
+    -  "8000:8020"
+    depends_on:
+    - postgres
+    environment:
+      DJANGO_SUPERUSER_USERNAME: admin
+      DJANGO_SUPERUSER_PASSWORD: admin
+      DJANGO_SUPERUSER_EMAIL: taha7900@gmail.com
